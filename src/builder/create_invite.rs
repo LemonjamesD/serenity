@@ -129,7 +129,7 @@ impl CreateInvite {
     /// # }
     /// ```
     pub fn max_uses(&mut self, max_uses: u64) -> &mut Self {
-        self.0.insert("max_uses", from_number(max_uses));
+        self.0.insert("uses", from_number(max_uses));
         self
     }
 
